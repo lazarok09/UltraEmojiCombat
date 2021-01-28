@@ -10,8 +10,19 @@ public class Lutador {
     private int vitorias;
     private int derrotas;
     private int empates;
+    private String sexo;
+
+    public String getSexo() {
+        return sexo;
+    }
+
+    public void setSexo(String sexo) {
+        this.sexo = sexo;
+    }
+
+    
     // construtor 
-   public Lutador(String nome, String nacionalidade, int idade, float altura, float peso, int vitorias, int derrotas, int empates){
+   public Lutador(String nome, String nacionalidade, int idade, float altura, float peso, int vitorias, int derrotas, int empates, String sexo){
     this.setNome(nome);
     this.setNacionalidade(nacionalidade);
     this.setIdade(idade);
@@ -20,6 +31,7 @@ public class Lutador {
     this.setVitorias(vitorias);
     this.setDerrotas(derrotas);
     this.setEmpates(empates);
+    this.setSexo(sexo);
    }
    public Lutador(){
    // with nothing cause maybe can be wrong.
